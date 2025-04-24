@@ -22,7 +22,7 @@ cible = 0
 basic.forever(function () {
     cap = input.compassHeading()
     if (arret == 0) {
-        if (Math.abs(cible - cap) < 5) {
+        if (Math.abs(cible - cap) < 10) {
             pins.digitalWritePin(DigitalPin.P0, 1)
             pins.digitalWritePin(DigitalPin.P1, 0)
             pins.digitalWritePin(DigitalPin.P2, 0)
